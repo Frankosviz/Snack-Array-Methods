@@ -8,6 +8,8 @@
 // nome dell'ospite (guestName),
 // posto occupato (place),
 // Generiamo e stampiamo in console la lista per i segnaposto.
+
+
 const tavoloVip = {
     nome: "Tavolo Vip",
     invitati: [
@@ -29,6 +31,16 @@ tavoloVip.invitati.forEach((invitato, indice) => {
     console.log(`${indice + 1}. ${invitato}`);
 });
 
+tavoloVip.invitati.map((invitato, indice) => {
+    const nuovaLista = [
+        {
+            postoOccupato : (indice),
+            nomeOspite : (invitato),
+            nomeTavolo : tavoloVip.nome
+        }
+    ]
+    console.log(nuovaLista);
+})
 
 
 
