@@ -57,12 +57,8 @@ const listaNomiMaiuscolo = listaStudenti.map(studente => studente.nome.toUpperCa
 
 console.log(listaNomiMaiuscolo);
 
-let votoMag70 = listaStudenti.filter(studente => studente.voto > 70);
-console.log(votoMag70);
-
-let votoMag70IdMag120 = listaStudenti.filter(studente => studente.voto > 70 && studente.id > 120);
-console.log(votoMag70IdMag120);
-
+const listaStudentiMag70 = 
+const listaStudentiMin70 = 
 
 
 
