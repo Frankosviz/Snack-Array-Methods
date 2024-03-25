@@ -1,64 +1,47 @@
-//  SNACK 2
-// Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
-// 1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
-// ES (Marco della Rovere => MARCO DELLA ROVERE);
-// 2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
-// 3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
-// Buon pomeriggio e buon lavoro !!! :faccia_nerd:
-// Questo è l'elenco degli studenti:
-// Id  Name                Grades
-// 213 Marco della Rovere      78
-// 110 Paola Cortellessa       96
-// 250 Andrea Mantegna         48
-// 145 Gaia Borromini          74
-// 196 Luigi Grimaldello       68
-// 102 Piero della Francesca   50
-// 120 Francesca da Polenta    84
+// SNACK 3
+// Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare in console la bici con peso minore utilizzando destructuring e template literal
 
-const listaStudenti = [
+
+const biciclette = [
     {
-        id : 213,
-        nome : 'Marco della Rovere',
-        voto : 78
+        nome: 'Mountain bike',
+        peso: 10
     },
     {
-        id : 110,
-        nome : 'Paola Cortellessa',
-        voto : 96
+        nome: 'Road bike',
+        peso: 5
     },
     {
-        id : 250,
-        nome : 'Andrea Mantegna',
-        voto : 48
+        nome: 'Hybrid bike',
+        peso: 7
     },
     {
-        id : 145,
-        nome : 'Gaia Borromini',
-        voto : 74
+        nome: 'Gravel',
+        peso: 2
     },
     {
-        id : 196,
-        nome : 'Luigi Grimaldello',
-        voto : 68
+        nome: 'Cinzia',
+        peso: 40
     },
     {
-        id : 102,
-        nome : 'Piero della Francesca',
-        voto : 50
+        nome: 'E-Velo',
+        peso: 5
     },
-    {
-        id : 120,
-        nome : 'Francesca da Polenta ',
-        voto : 84
+];
+
+
+const biciPiuLeggera = biciclette.reduce((biciPiuLeggera, bici) => {
+    if (biciPiuLeggera.peso < bici.peso) {
+        return biciPiuLeggera;
+
+    } else {
+        return bici;
     }
-]
+});
 
-const listaNomiMaiuscolo = listaStudenti.map(studente => studente.nome.toUpperCase());
-
-console.log(listaNomiMaiuscolo);
-
-const listaStudentiMag70 = 
-const listaStudentiMin70 = 
+console.log(biciPiuLeggera);
 
 
 
